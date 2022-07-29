@@ -10,17 +10,6 @@ Examples
 Constraints
 0 <= input.length <= 100 */
 
-/* function validParentheses(parens) {
-  const length = parens.length;
-  const closingLength = parens.replace(/\(/g, '').length;
-
-  if (parens[0] === ')' || parens[length - 1] === '(') {
-    return false;
-  }
-
-  return closingLength * 2 === length ? true : false;
-} */
-
 function validParentheses(parens) {
   while (parens.includes('()')) {
     parens = parens.replace('()', '');
